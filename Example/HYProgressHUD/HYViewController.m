@@ -55,7 +55,7 @@
         
         sleep(2);
         
-        [hud hy_updateText:@"Wait" details:@"To be continured!"];
+        [hud hy_updateText:@"Wait" details:@"To be continued!"];
         
         sleep(2);
         
