@@ -30,16 +30,43 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [MBProgressHUD showText:nil details:@"adsfdsfsdfsdfsdfsdfdsfsdfsdf"];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [MBProgressHUD showMessage:@"11111"];
+    
+//    static BOOL show = YES;
+//    
+//    [MBProgressHUD hy_showText:@"Note"
+//                       details:@"Note details"
+//                 indeterminate:show
+//                        toView:self.view
+//                hiddenanimated:YES
+//                         delay:2
+//               completionBlock:^{
+//                   show = !show;
+//                   
+//                   NSLog(@"Done");
+//               }];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+//        [MBProgressHUD hy_showText:@"TEXT" details:@"Details" hiddenAfterDelay:1 completionBlock:^{
+//            NSLog(@"Done");
+//        }];
         
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [MBProgressHUD showMessage:@"Done" completionBlock:^{
-                NSLog(@"Done");
-            }];
-        });
+//        [MBProgressHUD hy_showText:@"TEXT"];
+        MBProgressHUD *hud = [MBProgressHUD hy_showText:@"TEXT" details:@"Details" indeterminate:YES toView:self.view animated:YES];
+        
+        sleep(2);
+        
+        [hud hy_updateText:@"Wait" details:@"To be continured!"];
+        
+        sleep(2);
+        
+        [hud hy_updateText:@"Done" details:nil hideAnimated:YES afterDelay:1 completionBlock:^{
+            NSLog(@"Done");
+        }];
     });
+    
+    
+    
+    
 }
 
 @end
