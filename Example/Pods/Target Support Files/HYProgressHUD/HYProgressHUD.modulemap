@@ -1,0 +1,6 @@
+framework module HYProgressHUD {
+  umbrella header "HYProgressHUD-umbrella.h"
+
+  export *
+  module * { export * }
+}

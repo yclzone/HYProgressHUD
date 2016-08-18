@@ -1,0 +1,19 @@
+PODS:
+  - HYProgressHUD (0.1.0):
+    - MBProgressHUD (~> 1.0.0)
+  - MBProgressHUD (1.0.0)
+
+DEPENDENCIES:
+  - HYProgressHUD (from `../`)
+
+EXTERNAL SOURCES:
+  HYProgressHUD:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HYProgressHUD: 071cd1b1ddc753d403234b1b73612b6f58410a25
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+
+PODFILE CHECKSUM: 05b7ac2c4ae1a31acbd4d20569118322d278b016
+
+COCOAPODS: 1.1.0.beta.1

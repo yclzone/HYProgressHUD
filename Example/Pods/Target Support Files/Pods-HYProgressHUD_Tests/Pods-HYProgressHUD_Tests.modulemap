@@ -1,0 +1,6 @@
+framework module Pods_HYProgressHUD_Tests {
+  umbrella header "Pods-HYProgressHUD_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
