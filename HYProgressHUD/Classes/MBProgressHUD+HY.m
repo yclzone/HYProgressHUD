@@ -38,12 +38,12 @@
     completionBlock:(MBProgressHUDCompletionBlock)completionBlock {
     
     [self hy_showText:text
-                     details:details
-               indeterminate:NO
-                      toView:[UIApplication sharedApplication].keyWindow
-              hiddenanimated:YES
-                       delay:delay
-             completionBlock:completionBlock];
+              details:details
+        indeterminate:NO
+               toView:[UIApplication sharedApplication].keyWindow
+       hiddenanimated:YES
+                delay:delay
+      completionBlock:completionBlock];
 }
 
 + (void)hy_showText:(NSString *)text
@@ -58,11 +58,11 @@
 
 #pragma mark - 控制消失
 + (instancetype)hy_showText:(NSString *)text
-            details:(NSString *)details
-      indeterminate:(BOOL)showIndeterminate
-             toView:(UIView *)view
-           animated:(BOOL)animated {
-//    NSLog(@"%s -- %@", __FUNCTION__, [NSThread currentThread]);
+                    details:(NSString *)details
+              indeterminate:(BOOL)showIndeterminate
+                     toView:(UIView *)view
+                   animated:(BOOL)animated {
+    //    NSLog(@"%s -- %@", __FUNCTION__, [NSThread currentThread]);
     
     MBProgressHUD *hud = [[self alloc] initWithView:view];
     hud.removeFromSuperViewOnHide = YES;
@@ -79,13 +79,13 @@
 }
 
 - (void)hy_updateText:(NSString *)text
-           details:(NSString *)details
-      hideAnimated:(BOOL)animated
-        afterDelay:(NSTimeInterval)delay
-   completionBlock:(MBProgressHUDCompletionBlock)completionBlock {
-//    NSLog(@"%s -- %@", __FUNCTION__, [NSThread currentThread]);
+              details:(NSString *)details
+         hideAnimated:(BOOL)animated
+           afterDelay:(NSTimeInterval)delay
+      completionBlock:(MBProgressHUDCompletionBlock)completionBlock {
+    //    NSLog(@"%s -- %@", __FUNCTION__, [NSThread currentThread]);
     self.completionBlock = completionBlock;
-
+    
     dispatch_async(dispatch_get_main_queue(), ^{
         /** 必须在主线程，否则无效 */
         self.label.text = text;
@@ -102,5 +102,30 @@
         self.detailsLabel.text = details;
     });
 }
+
+#pragma mark - Getter && Setter
+- (void)setHy_text:(NSString *)hy_text {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.label.text = hy_text.copy;
+    });
+    
+}
+
+- (NSString *)hy_text {
+    return self.label.text;
+}
+
+
+- (void)setHy_details:(NSString *)hy_details {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.detailsLabel.text = hy_details.copy;
+    });
+}
+
+- (NSString *)hy_details {
+    return self.detailsLabel.text;
+}
+
+
 
 @end

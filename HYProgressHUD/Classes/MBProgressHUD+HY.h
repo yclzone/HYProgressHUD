@@ -9,6 +9,13 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 
 @interface MBProgressHUD (HY)
+
+/** 修改 label.text */
+@property (nonatomic, copy) NSString *hy_text;
+/** 修改 detailsLabel.text */
+@property (nonatomic, copy) NSString *hy_details;
+
+#pragma mark - 自动消失
 + (void)hy_showText:(NSString *)text
             details:(NSString *)details
       indeterminate:(BOOL)showIndeterminate
@@ -18,9 +25,9 @@
     completionBlock:(MBProgressHUDCompletionBlock)completionBlock ;
 
 + (void)hy_showText:(NSString *)text
-                    details:(NSString *)details
-           hiddenAfterDelay:(NSTimeInterval)delay
-            completionBlock:(MBProgressHUDCompletionBlock)completionBlock;
+            details:(NSString *)details
+   hiddenAfterDelay:(NSTimeInterval)delay
+    completionBlock:(MBProgressHUDCompletionBlock)completionBlock;
 
 + (void)hy_showText:(NSString *)text
    hiddenAfterDelay:(NSTimeInterval)delay
@@ -29,7 +36,7 @@
 + (void)hy_showText:(NSString *)text;
 
 
-#pragma mark - 手动
+#pragma mark - 控制消失
 + (instancetype)hy_showText:(NSString *)text
                     details:(NSString *)details
               indeterminate:(BOOL)showIndeterminate
@@ -37,10 +44,10 @@
                    animated:(BOOL)animated;
 
 - (void)hy_updateText:(NSString *)text
-           details:(NSString *)details
-      hideAnimated:(BOOL)animated
-        afterDelay:(NSTimeInterval)delay
-   completionBlock:(MBProgressHUDCompletionBlock)completionBlock;
+              details:(NSString *)details
+         hideAnimated:(BOOL)animated
+           afterDelay:(NSTimeInterval)delay
+      completionBlock:(MBProgressHUDCompletionBlock)completionBlock;
 
 - (void)hy_updateText:(NSString *)text
               details:(NSString *)details;
