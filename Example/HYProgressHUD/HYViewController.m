@@ -55,7 +55,9 @@
         
         sleep(2);
         
-        [hud hy_updateText:@"Wait" details:@"To be continued!"];
+//        [hud hy_updateText:@"Wait" details:@"To be continued!"];
+        hud.hy_text = @"Wait";
+        hud.hy_details = @"To be continued!";
         
         sleep(2);
         
