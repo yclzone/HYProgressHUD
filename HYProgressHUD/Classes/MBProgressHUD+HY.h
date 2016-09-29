@@ -43,6 +43,8 @@
                      toView:(UIView *)view
                    animated:(BOOL)animated;
 
++ (instancetype)hy_showTextWhileExecuting:(NSString *)text;
+
 - (void)hy_updateText:(NSString *)text
               details:(NSString *)details
          hideAnimated:(BOOL)animated

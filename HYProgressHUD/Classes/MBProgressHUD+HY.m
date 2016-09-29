@@ -78,6 +78,14 @@
     return hud;
 }
 
++ (instancetype)hy_showTextWhileExecuting:(NSString *)text {
+     return [self hy_showText:text
+                      details:nil
+                indeterminate:YES
+                       toView:[UIApplication sharedApplication].keyWindow
+                     animated:YES];
+}
+
 - (void)hy_updateText:(NSString *)text
               details:(NSString *)details
          hideAnimated:(BOOL)animated
