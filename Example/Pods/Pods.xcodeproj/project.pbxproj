@@ -15,15 +15,15 @@
 		2B6442A542BF5B86FEF1DD0C7C62030F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7859151CD62664298EB37BA054E6DAA4 /* Foundation.framework */; };
 		2F2F6618AEF30171FDE9E4E7AD8B02DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7859151CD62664298EB37BA054E6DAA4 /* Foundation.framework */; };
 		3511EFA1CFAC73A5D012EFD62A46DE22 /* Pods-HYProgressHUD_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3479B8B0166B0EBEDE1D014976AC4207 /* Pods-HYProgressHUD_Tests-dummy.m */; };
+		3CE69CE672078737A9E060CB765273E2 /* HYProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 910ED44D17D7955043350231B290762C /* HYProgressHUD-dummy.m */; };
 		453E2FC9D7975A9307E932AE83F4853E /* Pods-HYProgressHUD_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F309D272244F5B926E804FB3E5C7492 /* Pods-HYProgressHUD_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5889F5B7FEACFAFFC7983EE7FA20615A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1AB0195ECAC2F5C1262A0FC4519786 /* CoreGraphics.framework */; };
 		63EAC956BD815C9B56269C5ABD4F9D9E /* Pods-HYProgressHUD_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1413FB8B107EB1F762712796D41FB769 /* Pods-HYProgressHUD_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		678277A7D2C35EF1136AA214F667098A /* MBProgressHUD+HY.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A198811ABCAD239B49867893537C92 /* MBProgressHUD+HY.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7946CE96E3F258A18601E7AB639DB0E8 /* HYProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 910ED44D17D7955043350231B290762C /* HYProgressHUD-dummy.m */; };
+		7389BDFAD9DF294E5A9FA5A591DFC235 /* MBProgressHUD+HY.m in Sources */ = {isa = PBXBuildFile; fileRef = 624CE3289EB9CC0ACBF819F37ED44304 /* MBProgressHUD+HY.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		7E62FF84DBE3C5F007C2F6DD28F16DEB /* Pods-HYProgressHUD_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F153653C8679FC419657EC036A1D4ED /* Pods-HYProgressHUD_Example-dummy.m */; };
 		80E50F96F2672FBEDE4C4F30FC092675 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A83C101219E7ED4222CD65BCE24B0A5E /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89E4C9D655DDEE56B3778FEC071377A1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 817DE6F3CE52D1709B1A584C524842A8 /* QuartzCore.framework */; };
-		8F283745750F027B9F0C70942F4448B9 /* MBProgressHUD+HY.m in Sources */ = {isa = PBXBuildFile; fileRef = 624CE3289EB9CC0ACBF819F37ED44304 /* MBProgressHUD+HY.m */; };
 		C1E066DDF0B76E941869961C8A6C2F14 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC88E9BB2DAE98E2B831183A06BFB8C /* MBProgressHUD.m */; };
 		EC3FD2E72E207AED00D8D03D37A980B5 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = EA7EF56646DB1B2F653740B0FB77850B /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -404,7 +404,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3636D036FFF755FD4F10C009D606D461 /* Build configuration list for PBXNativeTarget "HYProgressHUD" */;
 			buildPhases = (
-				FCA1A0208213DBA4DF81B37A6D78AC5D /* Sources */,
+				8A8E80AEAAD9719E1E48DBDB4CE33A4B /* Sources */,
 				3AB5F66F6D0DAC1C466DF9818D5E5E9F /* Frameworks */,
 				FD177FCB0BBE75655DF35B94D4D12A66 /* Headers */,
 			);
@@ -456,6 +456,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8A8E80AEAAD9719E1E48DBDB4CE33A4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE69CE672078737A9E060CB765273E2 /* HYProgressHUD-dummy.m in Sources */,
+				7389BDFAD9DF294E5A9FA5A591DFC235 /* MBProgressHUD+HY.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94BED8A88F5988DE35EB879DCECCFAD5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -470,15 +479,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3511EFA1CFAC73A5D012EFD62A46DE22 /* Pods-HYProgressHUD_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FCA1A0208213DBA4DF81B37A6D78AC5D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7946CE96E3F258A18601E7AB639DB0E8 /* HYProgressHUD-dummy.m in Sources */,
-				8F283745750F027B9F0C70942F4448B9 /* MBProgressHUD+HY.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,11 +506,83 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		51F8A691C2BC14A9B6C3F15FF0D641BB /* Release */ = {
+		0E0F5772A28F2E693CB7AC2B5CD1CB4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D80E98F99EBA1A643CCD66E2E755A892 /* Pods-HYProgressHUD_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HYProgressHUD_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HYProgressHUD_Tests/Pods-HYProgressHUD_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HYProgressHUD_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		19DF14084CBD1EF05FCE4AAEC759D9B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA03AA1FFDBD6923159E658D54C2AD06 /* Pods-HYProgressHUD_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HYProgressHUD_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HYProgressHUD_Example/Pods-HYProgressHUD_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HYProgressHUD_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		46C6DD2B9630F51EF4CFDCF4F3C5F487 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4C1EE4B97D02463CB7C4D4F85F068867 /* MBProgressHUD.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -535,73 +607,13 @@
 			};
 			name = Release;
 		};
-		535F140FF44690DBB68B19179021E05F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 037D29216A1AC2D34467A41CEBE92C66 /* Pods-HYProgressHUD_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HYProgressHUD_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HYProgressHUD_Tests/Pods-HYProgressHUD_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HYProgressHUD_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		69A31ADF6B044F4B1662A0BC687BBB7E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1CF81CEB6BFF4000571AEEEA05405A5 /* HYProgressHUD.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HYProgressHUD/HYProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HYProgressHUD/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HYProgressHUD/HYProgressHUD.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = HYProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7C229CB36739932448DD5061A2E0495C /* Debug */ = {
+		486ECE6906841BF20625E482CAB70828 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4C1EE4B97D02463CB7C4D4F85F068867 /* MBProgressHUD.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -626,11 +638,13 @@
 			};
 			name = Debug;
 		};
-		878481E82F7BB63E6E59F7F1C6628739 /* Debug */ = {
+		4F524399BE3384281166E57ED2CD8789 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 430D3A3D853FE6A214D77E4ACF0F844D /* Pods-HYProgressHUD_Example.debug.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -658,6 +672,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		534FE820C2BFB81B1602428CFBFA0AB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1CF81CEB6BFF4000571AEEEA05405A5 /* HYProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HYProgressHUD/HYProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HYProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HYProgressHUD/HYProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HYProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -743,13 +788,15 @@
 			};
 			name = Debug;
 		};
-		C093EC72EEF01E326B78B854874E4638 /* Debug */ = {
+		B1E9B13CDE12B1FF57501728091F8866 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D80E98F99EBA1A643CCD66E2E755A892 /* Pods-HYProgressHUD_Tests.debug.xcconfig */;
+			baseConfigurationReference = 037D29216A1AC2D34467A41CEBE92C66 /* Pods-HYProgressHUD_Tests.release.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -762,7 +809,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HYProgressHUD_Tests/Pods-HYProgressHUD_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -774,13 +821,15 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		D3E07E84ED0BF6C45C912A0861DF074D /* Debug */ = {
+		C792A83760BB458E8AE372175A3D3ECC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C1CF81CEB6BFF4000571AEEEA05405A5 /* HYProgressHUD.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -805,47 +854,14 @@
 			};
 			name = Debug;
 		};
-		FBA21A38A68E9332630A7DEBE9DE792A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA03AA1FFDBD6923159E658D54C2AD06 /* Pods-HYProgressHUD_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HYProgressHUD_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HYProgressHUD_Example/Pods-HYProgressHUD_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HYProgressHUD_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		00DE919B4EDCD85024F9176E8826BF3F /* Build configuration list for PBXNativeTarget "Pods-HYProgressHUD_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C093EC72EEF01E326B78B854874E4638 /* Debug */,
-				535F140FF44690DBB68B19179021E05F /* Release */,
+				0E0F5772A28F2E693CB7AC2B5CD1CB4B /* Debug */,
+				B1E9B13CDE12B1FF57501728091F8866 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -862,8 +878,8 @@
 		3636D036FFF755FD4F10C009D606D461 /* Build configuration list for PBXNativeTarget "HYProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D3E07E84ED0BF6C45C912A0861DF074D /* Debug */,
-				69A31ADF6B044F4B1662A0BC687BBB7E /* Release */,
+				C792A83760BB458E8AE372175A3D3ECC /* Debug */,
+				534FE820C2BFB81B1602428CFBFA0AB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -871,8 +887,8 @@
 		3984088006A3DCB7F3B74BA593402E26 /* Build configuration list for PBXNativeTarget "Pods-HYProgressHUD_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				878481E82F7BB63E6E59F7F1C6628739 /* Debug */,
-				FBA21A38A68E9332630A7DEBE9DE792A /* Release */,
+				4F524399BE3384281166E57ED2CD8789 /* Debug */,
+				19DF14084CBD1EF05FCE4AAEC759D9B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -880,8 +896,8 @@
 		DEAE6D18BA710A455723DF6A000FA9D9 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7C229CB36739932448DD5061A2E0495C /* Debug */,
-				51F8A691C2BC14A9B6C3F15FF0D641BB /* Release */,
+				486ECE6906841BF20625E482CAB70828 /* Debug */,
+				46C6DD2B9630F51EF4CFDCF4F3C5F487 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

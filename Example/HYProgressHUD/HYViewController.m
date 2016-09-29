@@ -51,7 +51,9 @@
 //        }];
         
 //        [MBProgressHUD hy_showText:@"TEXT"];
-        MBProgressHUD *hud = [MBProgressHUD hy_showText:@"TEXT" details:@"Details" indeterminate:YES toView:self.view animated:YES];
+//        MBProgressHUD *hud = [MBProgressHUD hy_showText:@"TEXT" details:@"Details" indeterminate:YES toView:self.view animated:YES];
+        
+        MBProgressHUD *hud = [MBProgressHUD hy_showTextWhileExecuting:@"Title"];
         
         sleep(2);
         

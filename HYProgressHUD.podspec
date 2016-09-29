@@ -28,7 +28,7 @@ HYProgressHUD 只是对 MBProgressHUD 的简单封装，提供常用的显示，
   s.source           = { :git => 'https://github.com/yclzone/HYProgressHUD.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/yclzone'
 
-  s.ios.deployment_target = '8.0'
+  #s.ios.deployment_target = '8.0'
 
   s.source_files = 'HYProgressHUD/Classes/**/*'
   

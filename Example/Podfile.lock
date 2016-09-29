@@ -1,5 +1,5 @@
 PODS:
-  - HYProgressHUD (0.2.0):
+  - HYProgressHUD (0.3.0):
     - MBProgressHUD (~> 1.0.0)
   - MBProgressHUD (1.0.0)
 
@@ -11,9 +11,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HYProgressHUD: d832f5441a2c2739c37c282956316d358282cb4a
+  HYProgressHUD: 845973813c1c8b7b5eada5ead2fa283c07ac2bf1
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
 
 PODFILE CHECKSUM: 05b7ac2c4ae1a31acbd4d20569118322d278b016
 
-COCOAPODS: 1.1.0.beta.1
+COCOAPODS: 1.1.0.beta.2
